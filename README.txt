@@ -12,3 +12,13 @@ Compilation command
     uncomment one of the below lines in main.c
     -> for (j=0;j<6;j++)
     -> while (!feof(records))
+
+In function CS_GetAllEntries
+    If parameter fieldName show to int
+    { "id" , "salary" , "daysOff" , "prevYears" }
+    then parameter value in main will be given parameter &value,
+    that her value before the call of the function.
+    If parameter fieldName shows to chars
+    { "name" , "surname" , "status" , "dateOfBirth" , "section" }
+    then parameter value in main will be given value: ".....",
+    where ..... represent any character.
